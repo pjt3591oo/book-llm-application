@@ -14,3 +14,11 @@ model_pipeline = pipeline("text-classification", model=model_id)
 
 rst = model_pipeline("today is payday!")
 print(rst)
+
+
+model_id = 'hun3359/klue-bert-base-sentiment'
+
+model_pipeline = pipeline("text-classification", model=model_id)
+
+rst = model_pipeline("오늘은 월급날이에요!!")
+print(rst)

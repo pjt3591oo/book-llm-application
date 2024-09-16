@@ -32,3 +32,8 @@ model_id = 'SamLowe/roberta-base-go_emotions'
 custom_pipeline = CustomPipeline(model_id)
 rst = custom_pipeline("today is payday!")
 print(rst)
+
+model_id = 'hun3359/klue-bert-base-sentiment'
+custom_pipeline = CustomPipeline(model_id)
+rst = custom_pipeline("today is payday!")
+print(rst)
