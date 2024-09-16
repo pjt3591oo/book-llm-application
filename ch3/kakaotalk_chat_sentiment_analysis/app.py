@@ -27,7 +27,9 @@ def filter_row(row):
 def add_sentiment(row):
     try:
         rst = model_pipeline(row['Message'])
+        print(rst)
         row['Sentiment'] = rst[0]['label']
+        row['Score'] = rst[0]['score']
     except:
         row['Sentiment'] = 'error'
     return row
