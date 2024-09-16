@@ -8,12 +8,12 @@
 
 * [모델 학습시키기(model_train)](./model_train/)
 
-Trainer API 사용버전
+    * Trainer API 사용버전
 
-Trainer API 미사용버전
+    * Trainer API 미사용버전
 
 * [추론하기(inference)](./inference/)
 
-transformers.pipeline 사용버전
+    * transformers.pipeline 사용버전
 
-transformers.pipeline 미사용버전
+    * transformers.pipeline 미사용버전
