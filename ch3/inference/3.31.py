@@ -27,3 +27,8 @@ model_id = 'klue/roberta-base'
 custom_pipeline = CustomPipeline(model_id)
 rst = custom_pipeline("컴퓨터")
 print(rst)
+
+model_id = 'SamLowe/roberta-base-go_emotions'
+custom_pipeline = CustomPipeline(model_id)
+rst = custom_pipeline("today is payday!")
+print(rst)
