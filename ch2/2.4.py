@@ -47,6 +47,7 @@ print(input_embeddings.shape) # [1, 5, 16]
 
 ##### 쿼리, 키, 값, 벡터를 만드는 nn.Linear 층
 head_dim = 16
+embedding_dim = 16
 
 # 쿼리, 키, 값을계산하기 위한 변환
 weight_q = nn.Linear(embedding_dim, head_dim)
