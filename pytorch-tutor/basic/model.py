@@ -10,6 +10,7 @@ device = (
 )
 
 
+# 모델 레이어 정의
 class NeualNetwork(nn.Module):
 
   def __init__(self):
