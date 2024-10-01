@@ -1,3 +1,7 @@
 results/
 ch3/kakaotalk_chat_sentiment_analysis/*.csv
 .DS_Store
+pytorch-tutor/basic/data
+pytorch-tutor/basic/raw
+__pycache__
+model.pth
