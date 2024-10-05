@@ -2,12 +2,8 @@ import torch.nn as nn
 import torch
 from math import sqrt
 import torch.nn.functional as F
-from embedding import input_embeddings, embedding_dim
-
-##### 절대적 위치 인코딩 #####
 
 ##### 쿼리, 키, 값, 벡터를 만드는 nn.Linear 층 #####
-# is_causal: 마스킹 셀프 어텐션 여부
 def scaled_dot_product_attention(querys, keys, values, is_causal=False):
 	dim_k = querys.size(-1) # 16
 	scores = querys @ keys.transpose(-2, -1) / sqrt(dim_k) # (1, 5, 5)
@@ -42,7 +38,7 @@ class MultiheadAttention(nn.Module):
             querys,
             keys,
             values,
-            is_causal = self.is_causal
+            is_causal
         )
 
         output = attention.transpose(1, 2).contiguous().view(B, T, C)
