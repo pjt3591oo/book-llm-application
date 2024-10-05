@@ -16,7 +16,7 @@ class InputEmbedding(nn.Module):
     input_ids = self.tokenized(input_text)
     embedding = self.token_embedding(torch.tensor(input_ids))
     
-    return self.dropout(self.layer_corm(embedding))
+    return self.dropout(self.layer_norm(embedding))
     
   def tokenized(self, input_text):
     input_text_list = input_text.split()

@@ -56,7 +56,7 @@ if __name__ == '__main__':
   loss_fn = nn.CrossEntropyLoss()
   # 옵티마이저: 확률적 경사하강법
   optimizer = torch.optim.SGD(transformerModel.parameters(), lr=1e-3)
-  epoch = 3
+  epoch = 1
 
   for i in range(epoch):
     print(f"Epoch {i+1}\n----------------------------")
