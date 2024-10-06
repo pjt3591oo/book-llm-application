@@ -2,7 +2,6 @@ import torch.nn as nn
 import torch
 from math import sqrt
 import torch.nn.functional as F
-from embedding import input_embeddings, embedding_dim
 
 ##### 절대적 위치 인코딩 #####
 

@@ -5,3 +5,5 @@ pytorch-tutor/basic/data
 pytorch-tutor/basic/raw
 __pycache__
 model.pth
+
+ChatBotData.csv

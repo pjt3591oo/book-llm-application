@@ -16,8 +16,8 @@ input_ids = [str2idx[word] for word in input_text_list]
 ##### 토큰 아이디 생성 종료 #####
 
 ##### 절대적 위치 인코딩 #####
-embedding_dim = 16
-max_position = 12
+embedding_dim = 52
+max_position = 52
 embed_layer = nn.Embedding(len(str2idx), embedding_dim) # Embedding(5, 16)
 position_embed_layer = nn.Embedding(max_position, embedding_dim) # Embedding(12, 16)
 

@@ -14,6 +14,7 @@ class InputEmbedding(nn.Module):
 
   def forward(self, input_text):
     input_ids = self.tokenized(input_text)
+
     embedding = self.token_embedding(torch.tensor(input_ids))
     
     return self.dropout(self.layer_norm(embedding))

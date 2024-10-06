@@ -1,4 +1,5 @@
 import torch.nn as nn
+import torch.nn.functional as F
 
 class Transformer(nn.Module):
 
@@ -22,8 +23,7 @@ class Transformer(nn.Module):
     # 별도의 학습 가중치가 필요함
     x = self.input_embedding(x)
     x = self.positional_encoding(x)
-    
     c = self.encode(x)
     y = self.decode(x, c)
 
-    return y
+    return F.log_softmax(y)
